@@ -286,7 +286,7 @@ class PredictorAgentDL:
 
     def predict(self, history_df: pd.DataFrame) -> dict:
         """
-        Vrátí {prob, is_risky, threshold}.
+        Vrátí {prob, is_risky,threshold}.
         """
         prob = self.predict_risk(history_df)
         return {

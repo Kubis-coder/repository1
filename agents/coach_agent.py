@@ -1,4 +1,3 @@
-# agents/coach_agent.py
 import numpy as np
 import pandas as pd
 

@@ -1,4 +1,3 @@
-# agents/gemini_agent.py
 import os
 import random
 
