@@ -1,0 +1,6 @@
+numpy
+pandas
+matplotlib
+streamlit
+torch
+google-genai
