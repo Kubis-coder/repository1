@@ -1,9 +1,6 @@
-# agents/vision_agent.py
 import matplotlib.pyplot as plt
 import matplotlib.patches as patches
 import pandas as pd
-import numpy as np
-import io
 
 
 class VisionAgent:

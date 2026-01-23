@@ -1,4 +1,3 @@
-# models/train_model_lstm_defense.py
 import os
 import sys
 import time
@@ -12,7 +11,7 @@ import torch
 from torch import nn
 from torch.utils.data import Dataset, DataLoader
 
-# --- allow imports from project root when running this file directly ---
+
 ROOT = os.path.abspath(os.path.join(os.path.dirname(__file__), ".."))
 if ROOT not in sys.path:
     sys.path.insert(0, ROOT)
@@ -32,7 +31,7 @@ class Config:
 
     # HOKEJ: kratší horizont = méně noise, víc signálu
     # Predict: "goal AGAINST current team occurs within next N events (same game)"
-    target_window: int = 7          # ✅ doporučeno 5–7
+    target_window: int = 7
     seq_len: int = 20               # historie
 
     batch_size: int = 1024

@@ -1,4 +1,3 @@
-# app/bench_boss_app.py
 import os
 import sys
 import numpy as np

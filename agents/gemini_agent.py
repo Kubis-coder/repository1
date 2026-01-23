@@ -1,7 +1,6 @@
 import os
 import random
 
-# Pokusíme se importovat novou knihovnu
 try:
     from google import genai
     from google.genai import types
@@ -81,8 +80,6 @@ class GeminiAgent:
 
     def _get_offline_advice(self, context: dict) -> str:
         return random.choice(self.offline_rules)
-
-# agents/gemini_agent.py - stačí nahradit metodu _build_prompt
 
     def _build_prompt(self, context: dict) -> str:
         # Získáme syrové riziko (0.0 až 1.0)

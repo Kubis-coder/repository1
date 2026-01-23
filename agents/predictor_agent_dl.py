@@ -1,4 +1,3 @@
-# agents/predictor_agent_dl.py
 import os
 import json
 from typing import Optional, Dict, Any, Tuple, List
@@ -82,9 +81,7 @@ class PredictorAgentDL:
 
         self._load()
 
-    # =========================
-    # LOADING
-    # =========================
+
     def _load(self) -> None:
         if not os.path.exists(self.meta_path):
             raise FileNotFoundError(f"Meta nenalezena: {self.meta_path}")
@@ -132,7 +129,7 @@ class PredictorAgentDL:
         self.model.eval()
 
     # =========================
-    # FEATURE HELPERS (MUST MATCH TRAIN)
+    # FEATURE HELPERS
     # =========================
     def _map_event(self, evt) -> int:
         s = str(evt).upper()
