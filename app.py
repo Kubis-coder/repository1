@@ -140,6 +140,65 @@ st.markdown("""
         color: #666 !important;
     }
 
+    /* FORM FIELDS - HIGH CONTRAST */
+    input, textarea, select {
+        background-color: #0b0b0b !important;
+        color: #ffffff !important;
+        border: 2px solid #555555 !important;
+        border-radius: 6px !important;
+    }
+    input::placeholder, textarea::placeholder {
+        color: #bbbbbb !important;
+        opacity: 1 !important;
+    }
+    div[data-baseweb="select"] > div,
+    div[data-baseweb="select"] input {
+        background-color: #0b0b0b !important;
+        color: #ffffff !important;
+        border-color: #555555 !important;
+    }
+    div[data-baseweb="select"] svg {
+        fill: #ffffff !important;
+    }
+    .stNumberInput input,
+    .stTextInput input,
+    .stTextArea textarea {
+        background-color: #0b0b0b !important;
+        color: #ffffff !important;
+        border: 2px solid #555555 !important;
+    }
+    .stDateInput input,
+    .stTimeInput input {
+        background-color: #0b0b0b !important;
+        color: #ffffff !important;
+        border: 2px solid #555555 !important;
+    }
+    .stMultiSelect, .stSelectbox {
+        color: #ffffff !important;
+    }
+    div[role="listbox"] {
+        background-color: #111111 !important;
+        color: #ffffff !important;
+        border: 1px solid #444444 !important;
+    }
+    div[role="option"] {
+        color: #ffffff !important;
+    }
+    div[role="option"]:hover {
+        background-color: #1f2937 !important;
+    }
+
+    /* TABLES / DATAFRAMES */
+    .stDataFrame, .stTable, table {
+        color: #ffffff !important;
+        background-color: #0b0b0b !important;
+    }
+    table th, table td {
+        color: #ffffff !important;
+        background-color: #0b0b0b !important;
+        border-color: #444444 !important;
+    }
+
 </style>
 """, unsafe_allow_html=True)
 
